@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/ulg/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+</style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    <a class="navbar-brand" href="#">Carousel</a>
+
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          What we do
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+    </ul>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-nav ml-auto">
+      <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn  btn-outline-success" type="submit">Search</button>
+      </form>
+    </nav>
+  </nav>
+
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="photo1.jpg" alt="Another example headline" width="1500" height="500">
+        <div class="carousel-caption">
+          <h3>Another example headline</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac placerat. Donec
+            lacinia risus eu ante laoreet odio sodales</p>
+          <button class="btn  btn-primary" type="submit">Search</button>
+          <br><br><br>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="photo1.jpg" alt="Another example headline" width="1500" height="500">
+        <div class="carousel-caption">
+          <h3>Another example headline</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac placerat. Donec
+            lacinia risus eu ante laoreet odio sodales. </p>
+          <button class="btn  btn-primary" type="submit">Search</button>
+          <br><br><br>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="photo1.jpg" alt="Another example headline" width="1500" height="500">
+        <div class="carousel-caption">
+          <h3>Another example headline</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac placerat. Donec
+            lacinia risus eu ante laoreet odio sodales</p>
+          <button class="btn  btn-primary" type="submit">Search</button>
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <br><br>
+
+  <div class="container">
+    <div class="row"> </div>
+    <img src="photo2.jpg" class="float-right" alt="Paris" width="500" height="500">
+    <br><br> <br><br><br><br><br>
+    <h2 class="text-left">First Feauterette Heading. It'll blow your mind !</h2>
+    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac
+      placerat. Donec lacinia risus eu ante laoreet, ut pharetra odio sodales.
+      nibh est, tincidunt at feugiat vitae,interdum eget augue.sapien quis aliquam placerat, ante diam scelerisque diam,
+      quis volutpat lectus dui et neque.
+      Aliquam ac turpis nunc. Suspendisse ullamcorper est mattis sodales placerat.</p>
+
+    <br><br><br><br><br><br><br>
+
+    <div class="media">
+      <img class="align-self-center mr-3" src="photo2.jpg" alt="Generic placeholder image" width="500" height="500">
+      <div class="media-body">
+        <br><br> <br><br><br><br><br>
+        <h2 class="text-left">Oh yeah, It's that good. See for yourself.</h2>
+        <p class="text-left"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac
+          placerat. Donec lacinia risus eu ante laoreet, ut pharetra odio sodales.
+          Mauris nibh est, tincidunt at feugiat vitae,interdum eget augue.sapien quis aliquam placerat, ante diam
+          scelerisque diam, quis volutpat lectus dui et neque.
+          Aliquam ac turpis nunc. Suspendisse ullamcorper est mattis sodales placerat </p>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="thumbnail ">
+          <img src="photo1.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac placerat.
+              Donec lacinia risus eu ante laoreet, ut pharetra odio sodales.
+              Mauris nibh est,.</p>
+            <div class="row">
+              <div class="col-lg-8">
+                <button type="button" class="btn btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-outline-secondary">Edit</button>
+              </div>
+              <div class="col-lg-4">
+                <p class="text-right">
+                  9 mins
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4">
+        <div class="thumbnail">
+
+          <img src="photo1.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac placerat.
+              Donec lacinia risus eu ante laoreet, ut pharetra odio sodales.
+              Mauris nibh est,</p>
+            <div class="row">
+              <div class="col-lg-8">
+                <button type="button" class="btn btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-outline-secondary">Edit</button>
+              </div>
+              <div class="col-lg-4">
+                <p class="text-right">
+                  9 mins
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="thumbnail">
+
+          <img src="photo1.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac placerat.
+              Donec lacinia risus eu ante laoreet, ut pharetra odio sodales.
+              Mauris nibh est,</p>
+            <div class="row">
+              <div class="col-lg-8">
+                <button type="button" class="btn btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-outline-secondary">Edit</button>
+              </div>
+              <div class="col-lg-4">
+                <p class="text-right">
+                  9 mins
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <br> <br>
+
+
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="thumbnail ">
+          <img src="photo1.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac placerat.
+              Donec lacinia risus eu ante laoreet, ut pharetra odio sodales.
+              Mauris nibh est,.</p>
+            <div class="row">
+              <div class="col-lg-8">
+                <button type="button" class="btn btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-outline-secondary">Edit</button>
+              </div>
+              <div class="col-lg-4">
+                <p class="text-right">
+                  9 mins
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4">
+        <div class="thumbnail">
+
+          <img src="photo1.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac placerat.
+              Donec lacinia risus eu ante laoreet, ut pharetra odio sodales.
+              Mauris nibh est,</p>
+            <div class="row">
+              <div class="col-lg-8">
+                <button type="button" class="btn btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-outline-secondary">Edit</button>
+              </div>
+              <div class="col-lg-4">
+                <p class="text-right">
+                  9 mins
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="thumbnail">
+
+          <img src="photo1.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus aliquam metus ac placerat.
+              Donec lacinia risus eu ante laoreet, ut pharetra odio sodales.
+              Mauris nibh est,</p>
+            <div class="row">
+              <div class="col-lg-8">
+                <button type="button" class="btn btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-outline-secondary">Edit</button>
+              </div>
+              <div class="col-lg-4">
+                <p class="text-right">
+                  9 mins
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br><br><br>
+
+  <div class="container">
+    <div class="text-center">
+      <ul class="pagination justify-content-center ">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="container">
+
+    <form>
+      <div class="form-row">
+        <div class="form-group col-lg-6">
+          <label for="Input Email">Email</label>
+          <input type="email" class="form-control" id="Input Email">
+        </div>
+
+        <div class="form-group col-lg-6">
+          <label for="Input Password">Password</label>
+          <input type="password" class="form-control" id="Input Password">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="Input Address">Address</label>
+        <input type="text" class="form-control" id="Input Address" placeholder="1234 Main St">
+
+      </div>
+
+      <div class="form-group">
+        <label for="Input Address 2">Address 2</label>
+        <input type="text" class="form-control" id="Input Address 2" placeholder="Apartment, studio, or floor">
+
+      </div>
+
+
+      <div class="form-row">
+        <div class="form-group col-lg-6">
+          <label for="City">Email</label>
+          <input type="text" class="form-control" id="City">
+        </div>
+
+        <div class="form-group col-lg-4">
+          <label for="State">State</label>
+          <select id="State" class="form-control">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+
+        <div class="form-group col-lg-2">
+          <label for="Zip">Zip</label>
+          <input type="text" class="form-control" id="Zip">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+  </div>
+  </form>
+
+  <br><br><br>
+
+  <div class="container-fluid p-4 my-0 bg-info text-white">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="footer-widget">
+          <div class="footer-menu footer-menu--1">
+
+            <h4 class="footer-widget-title ">LINKS</h4>
+            <ul class="navbar-nav text-white">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Very long Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Very long Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Very long Link 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Very long Link 4</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="footer-widget">
+          <div class="footer-menu footer-menu--1">
+
+            <h4 class="footer-widget-title ">LINKS</h4>
+            <ul class="navbar-nav text-white">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 4</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="footer-widget">
+          <div class="footer-menu footer-menu--1">
+
+            <h4 class="footer-widget-title ">LINKS</h4>
+            <ul class="navbar-nav text-white">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 4</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="footer-widget">
+          <div class="footer-menu footer-menu--1">
+
+            <h4 class="footer-widget-title ">LINKS</h4>
+            <ul class="navbar-nav text-white">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Link 4</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid p-1 my-0 bg-primary text-white">
+    <p class="text text-center ">@2020 Copyright </p>
+
+
+
+</body>
+
+</html>
